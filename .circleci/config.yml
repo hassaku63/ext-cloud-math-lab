@@ -29,8 +29,8 @@ jobs:
       - run:
           name: install dependencies
           command: |
-            python3 -m venv venv
-            . venv/bin/activate
+            # python3 -m venv venv
+            # . venv/bin/activate
             pip install -r requirements.txt
             echo $(which python)
 
@@ -39,6 +39,7 @@ jobs:
           name: mkdocs build
           command: |
             echo $(which python)
+            echo $(which mkdocs)
             echo "mkdocs build"
 
       - run:
