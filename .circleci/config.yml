@@ -41,6 +41,9 @@ jobs:
 
       - run:
           name: mkdocs gh-deploy
+          # copy .circleci directory before deployment becase of
+          # gh-deploy only push files in 'site_dir'
           command: |
             echo Start mkdocs gh-deploy
+            cp -r .circleci docs/
             mkdocs gh-deploy
