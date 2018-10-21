@@ -37,7 +37,8 @@ jobs:
       - run:
           name: mkdocs build
           command: |
-            mkdocs build
+            which mkdocs
+            echo "mkdocs build"
 
       - run:
           name: mkdocs gh-deploy
