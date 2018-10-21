@@ -1,17 +1,15 @@
-# Welcome to MkDocs
+# Welcome to ext-cloud-math-lab
 
-For full documentation visit [mkdocs.org](https://mkdocs.org).
+Author: [hassaku63](https://github.com/hassaku63) (Twitter: [hassaku_63](https://twitter.com/hassaku_63))
 
-## Commands
+Repository: [hassaku63/ext-cloud-math-lab](https://github.com/hassaku63/ext-cloud-math-lab)
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
 
-## Project layout
+# Purpose
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+自社活動の "ext-cloud-math-lab" での勉強ログをつける
+
+取り扱うトピックは以下
+
+- 統計/機械学習
+- データ基盤(主にAWS)
