@@ -1,14 +1,21 @@
 site_author: hassaku63
-site_name: \#ext-cloud-math-lab
-repo_name: 
+site_name: "#ext-cloud-math-lab"
+repo_name: GitHub
 repo_url: https://github.com/hassaku63/ext-cloud-math-lab
 docs_dir: src
 site_dir: docs
 
 use_directory_urls: false
 
+markdown_extensions:
+    - toc:
+        baselevel: 2
+
 theme:
     name: material
 
-pages:
+nav:
   - Home: index.md
+  - AWS: 
+    - Index: aws/index.md
+    - SageMaker: aws/sagemaker/index.md
