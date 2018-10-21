@@ -28,15 +28,17 @@ jobs:
       - run:
           name: install dependencies
           command: |
-            python3 -m venv venv
-            . venv/bin/activate
-            pip install -r requirements.txt
+            sudo pip install -r requirements.txt
 
       # Build & Deploy
       - run:
           name: mkdocs build
-          command: mkdocs build
+          command: |
+            echo Start mkdocs build
+            mkdocs build
 
       - run:
           name: mkdocs gh-deploy
-          command: mkdocs gh-deploy
+          command: |
+            echo Start mkdocs gh-deploy
+            mkdocs gh-deploy
