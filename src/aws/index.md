@@ -1,3 +1,3 @@
 # AWS
 
-- [SageMaker](sagemaker/indexm.md)
+- [SageMaker](sagemaker/index.md)
