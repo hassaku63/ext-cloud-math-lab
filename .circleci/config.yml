@@ -17,13 +17,19 @@ jobs:
 
     branches:
       only:
-        - master
+        - dev
+        - dev-*
 
     working_directory: ~/repo
 
     steps:
       # Checkout into working_directory
       - checkout
+
+      - persist_to_workspace:
+          root: .
+          paths:
+            - venv/*
 
       - run:
           name: install dependencies
@@ -35,8 +41,10 @@ jobs:
       # Build & Deploy
       - run:
           name: mkdocs build
-          command: mkdocs build
+          command: |
+            mkdocs build
 
       - run:
           name: mkdocs gh-deploy
-          command: mkdocs gh-deploy
+          command: |
+            echo "mkdocs gh-deploy"
