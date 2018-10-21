@@ -32,12 +32,13 @@ jobs:
             python3 -m venv venv
             . venv/bin/activate
             pip install -r requirements.txt
+            echo $(which python)
 
       # Build & Deploy
       - run:
           name: mkdocs build
           command: |
-            ls venv/bin/
+            echo $(which python)
             echo "mkdocs build"
 
       - run:
