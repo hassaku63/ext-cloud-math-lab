@@ -37,7 +37,7 @@ jobs:
       - run:
           name: mkdocs build
           command: |
-            which mkdocs
+            ls venv/bin/
             echo "mkdocs build"
 
       - run:
