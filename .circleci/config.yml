@@ -17,8 +17,7 @@ jobs:
 
     branches:
       only:
-        - dev
-        - dev-*
+        - master
 
     working_directory: ~/repo
 
@@ -42,4 +41,4 @@ jobs:
           name: mkdocs gh-deploy
           command: |
             echo Start mkdocs gh-deploy
-            echo "mkdocs gh-deploy"
+            mkdocs gh-deploy
