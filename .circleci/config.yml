@@ -26,11 +26,6 @@ jobs:
       # Checkout into working_directory
       - checkout
 
-      - persist_to_workspace:
-          root: .
-          paths:
-            - venv/*
-
       - run:
           name: install dependencies
           command: |
