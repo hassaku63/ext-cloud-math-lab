@@ -1,0 +1,14 @@
+site_author: hassaku63
+site_name: \#ext-cloud-math-lab
+repo_name: 
+repo_url: https://github.com/hassaku63/ext-cloud-math-lab
+docs_dir: src
+site_dir: docs
+
+use_directory_urls: false
+
+theme:
+    name: material
+
+pages:
+  - Home: index.md
